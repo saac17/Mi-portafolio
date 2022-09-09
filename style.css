@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #020403;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    overflow: auto;
+}
+
+/***********NAV**********/
+nav .ham{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+nav{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+.enlaces-menu li{
+    padding: 0 25px;
+    list-style: none;
+}
+.enlaces-menu li a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.enlaces-menu li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.home{
+    display: grid;
+    place-items: center;
+}
+.img-user{
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.img-user img{
+    width: 25%;
+    height: auto;
+    border-radius: 45%;
+}
+h2{
+    font-family: Rubik;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+h1{
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.info-user{
+    display: grid;
+    place-items: center;
+}
+.home .info-user h2{
+    margin-top: 50px;
+    color: #ADADAD;
+}
+.name-user{
+    width: 70%;
+}
+.icons-profiles{
+    width: 50%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.acerca-de-mi{
+    margin: 50px 0 0 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+p{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center; 
+    max-width: 70%;
+    margin-top: 20px;
+}
+.mis-habilidades{
+    margin: 50px 0 0 0;
+    display: grid;
+    place-items: center;
+}
+.mis-habilidades .icons-habilidades{
+    max-width: 90%;
+    margin-top: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.icons-habilidades div{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+.icons-habilidades img{
+    background-color: #1c1616;
+    padding: 5px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.experiencia{
+    margin: 50px 0 0 0;
+    display: grid;
+    place-items: center;
+}
+.experiencia-info{
+    width: 90%;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.experiencia-info hr{
+    width: 80%;
+    color: #1c1616;
+    grid-column: 1 / 3;
+}
+.experiencia-info div{
+    width: 35%;
+}
+.experiencia-info .exp-info-fecha,
+.experiencia-info .exp-info-nombre{
+    width: 100%;
+}
+.experiencia-info .exp-info-nombre p,
+.experiencia-info .exp-info-nombre h3{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: left;
+}
+.experiencia-info .exp-info-nombre{
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+.experiencia-info .exp-info-fecha p{
+    margin: 25px 0 0 0;
+}
+.portafolio{
+    width: 100%;
+    margin: 50px 0 ;
+    padding: 0;
+    display: grid;
+    place-items: center;
+
+}
+
+.portafolio img{
+    margin-top: 25px;
+    width: 80%;
+}
+.img-portafolio{
+    width: 70%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer{
+    width: 100%;
+}
+.contact{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+.contact h2{
+    text-align: center;
+    margin: 0 5%;
+}
+.contact-icons{
+    margin: 5% 5% 0 5%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-tel,
+.contact-email{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-tel p,
+.contact-email p{
+    margin: 0;
+    padding: 0;
+}
+.contact-data{
+    font-size: 12px;
+}
+.contact-tel i,
+.contact-email i{
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border: 1px solid ;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+
+
+@media (max-width: 768px){
+    body{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: auto;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 8vh;
+        background-color: transparent;
+    }
+    nav .ham{
+        display: block;
+    }
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+    }
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .img-user img{
+        width: 50%;
+        height: auto;
+        border-radius: 45%;
+    }
+    .mis-habilidades{
+        margin: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .mis-habilidades .icons-habilidades{
+        max-width: 70%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .icons-habilidades div{
+        display: grid;
+        place-items: center;
+        margin-top: 20px;
+    }
+    .icons-habilidades img{
+        background-color: #1c1616;
+        padding: 5px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    .experiencia-info hr{
+        width: 90%;
+        color: #1c1616;
+        grid-column: 1 / 3;
+    }
+    .experiencia-info .exp-info-fecha p{
+        margin: 0 0 25px 0;
+    }
+    .portafolio{
+        width: 100%;
+        margin: 50px 0;
+        padding: 0;
+    }
+    .portafolio h2{
+        width: 90%;
+        text-align: left;
+    }
+    .portafolio img{
+        width: 90%;
+        margin-top: 25px;
+    }
+    .img-portafolio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact h2{
+        text-align: left;
+        margin: 0 5%;
+    }
+}
+@keyframes muestraMenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+}
